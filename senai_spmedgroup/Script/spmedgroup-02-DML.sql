@@ -5,7 +5,7 @@ go
 insert into TipoUsuario (Titulo)
 values ('Adm'),
 	   ('Paciente'),
-	   ('M�dico')
+	   ('Médico')
 go
 
 insert into Especialidade (Especialidade)
@@ -16,23 +16,23 @@ values ('Ortopedista'),
 go
 
 insert into Situacao (Situacao)
-values ('Conclu�do'),
+values ('Concluído'),
 	   ('Aguardando'),
 	   ('Negado')
 go
 
 insert into Usuario (Email,Senha,IdTipoUsuario)
-values ( 'otario@gmail.com', 'nicolas123',1),
-	   ( 'cadu@gmail.com', 'cadu123', 2),
-	   ( 'eduardo@gmail.com', 'duds123', 3)
+values ( 'yan@gmail.com', 'yan123',1),
+	   ( 'analaurafeltrim@gmail.com', 'analaurafeltrim123', 2),
+	   ( 'joão@gmail.com', 'joão123', 3)
 go
 
 insert into Paciente ( Nome ,CPF, RG, Endereco, DataNas, IdUsuario)
-values ('Carlos','123.456.578.89',' 45.878.254.2', 'R. jeberson kleison', '29-03-2003',2)
+values ('Yan','123.456.578.89',' 45.878.254.2', 'R. jeberson kleison', '29-03-2003',2)
 go
 
 insert into Medico ( Nome, CRM, IdClinica, IdEspecialidade, IdUsuario)
-values ('Eduardo','123456', 1, 2, 3)
+values ('Ana','123456', 1, 2, 3)
 go
 
 insert into Consulta (DataConsulta, Descricao, IdMedico, IdPaciente, IdSituacao)
