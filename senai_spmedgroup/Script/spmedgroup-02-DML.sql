@@ -22,17 +22,17 @@ values ('Concluído'),
 go
 
 insert into Usuario (Email,Senha,IdTipoUsuario)
-values ( 'yan@gmail.com', 'yan123',1),
+values ( 'joão@gmail.com', 'yan123',1),
 	   ( 'analaurafeltrim@gmail.com', 'analaurafeltrim123', 2),
-	   ( 'joão@gmail.com', 'joão123', 3)
+	   ( 'yan@gmail.com', 'joão123', 3)
 go
 
 insert into Paciente ( Nome ,CPF, RG, Endereco, DataNas, IdUsuario)
-values ('Yan','123.456.578.89',' 45.878.254.2', 'R. jeberson kleison', '29-03-2003',2)
+values ('Ana','123.456.578.89',' 45.878.254.2', 'R. jeberson kleison', '29-03-2003',2)
 go
 
 insert into Medico ( Nome, CRM, IdClinica, IdEspecialidade, IdUsuario)
-values ('Ana','123456', 1, 2, 3)
+values ('Yan','123456', 1, 2, 3)
 go
 
 insert into Consulta (DataConsulta, Descricao, IdMedico, IdPaciente, IdSituacao)
